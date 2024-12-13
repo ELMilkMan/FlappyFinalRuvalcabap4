@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class bird : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class bird : MonoBehaviour
 
         void OnCollisionEnter2D ()
         {
+            rb2d.velocity = Vector2.zero;
             isDead = true;
             anim.SetTrigger("Die");
         GameController.instance.BirdDied();
