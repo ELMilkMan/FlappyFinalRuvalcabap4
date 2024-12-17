@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public GameObject gameOverText;
     public TextMeshProUGUI scoreText;
     public bool gameOver = false;
-    public TextMeshProUGUI Scoretext;
+    
     public float scrollSpeed = 1.5f;
 
     private int score = 0;
